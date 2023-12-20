@@ -1,0 +1,35 @@
+---
+    description: A Context component
+    labels: ['context']
+    ---
+    
+    import { UserLangaugeProvider } from './user-langauge-context-provider';
+    import { DisplayLanguage } from './user-langauge-context.composition';
+    
+    ## React Theme Context
+    
+    This is a simple [React Context](https://reactjs.org/docs/context.html) shared as a Bit component.
+    Use this component to share data between components without having to pass props down manually at every level.
+    
+    ### Component usage
+```tsx
+import React from 'react';
+import {
+  UserLangaugeProvider,
+  useUserLangauge,
+} from '@org-name/scope-name.context.user-langauge';
+
+/* demo component */
+const DisplayLanguage = () => {
+  const { language } = useUserLangauge();
+  if (language === 'en') return Hi!;
+  return Hola!;
+};
+
+export const BasicUsage = () => {
+  return (
+    <UserLangaugeProvider language="sp">
+    <DisplayLanguage />
+  </UserLangaugeProvider>
+  );
+};

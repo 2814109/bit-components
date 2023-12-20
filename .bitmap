@@ -9,6 +9,20 @@
  */
 
 {
+    "context/user-langauge": {
+        "name": "context/user-langauge",
+        "scope": "",
+        "version": "",
+        "defaultScope": "my-org.my-scope",
+        "mainFile": "index.ts",
+        "rootDir": "my-scope/context/user-langauge",
+        "config": {
+            "my-org.my-scope/envs/my-react-env": {},
+            "teambit.envs/envs": {
+                "env": "my-org.my-scope/envs/my-react-env"
+            }
+        }
+    },
     "envs/my-react-env": {
         "name": "envs/my-react-env",
         "scope": "",
@@ -34,6 +48,20 @@
                     "name": "react-env-extension",
                     "version": "1.0.32"
                 }
+            }
+        }
+    },
+    "hooks/use-counter": {
+        "name": "hooks/use-counter",
+        "scope": "",
+        "version": "",
+        "defaultScope": "my-org.my-scope",
+        "mainFile": "index.ts",
+        "rootDir": "my-scope/hooks/use-counter",
+        "config": {
+            "my-org.my-scope/envs/my-react-env": {},
+            "teambit.envs/envs": {
+                "env": "my-org.my-scope/envs/my-react-env"
             }
         }
     },
