@@ -9,6 +9,20 @@
  */
 
 {
+    "buttons/button": {
+        "name": "buttons/button",
+        "scope": "",
+        "version": "",
+        "defaultScope": "my-org.design",
+        "mainFile": "index.ts",
+        "rootDir": "design/buttons/button",
+        "config": {
+            "my-org.my-scope/envs/my-react-env": {},
+            "teambit.envs/envs": {
+                "env": "my-org.my-scope/envs/my-react-env"
+            }
+        }
+    },
     "context/user-langauge": {
         "name": "context/user-langauge",
         "scope": "",
