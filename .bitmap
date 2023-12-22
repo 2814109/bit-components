@@ -73,9 +73,9 @@
         "mainFile": "index.ts",
         "rootDir": "my-scope/hooks/use-counter",
         "config": {
-            "my-org.my-scope/envs/my-react-env": {},
+            "bitdev.react/react-env@1.1.13": {},
             "teambit.envs/envs": {
-                "env": "my-org.my-scope/envs/my-react-env"
+                "env": "bitdev.react/react-env"
             }
         }
     },
