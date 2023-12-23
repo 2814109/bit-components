@@ -10,7 +10,7 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "react-workspace",
+    "name": "my-workspace-name",
     /**
      * set the icon to be shown on the Bit server.
      **/
@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "my-org.my-scope",
+    "defaultScope": "my-scope",
     "resolveAspectsFromNodeModules": true,
     "resolveEnvsFromRoots": true
   },
@@ -51,31 +51,13 @@
      * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
      */
     "packageManager": "teambit.dependencies/pnpm",
+    "rootComponents": true,
     "policy": {
-      "dependencies": {
-        "@teambit/defender.eslint-linter": "1.0.16",
-        "@teambit/defender.jest-tester": "1.0.13",
-        "@teambit/defender.prettier-formatter": "1.0.8",
-        "@teambit/dependencies.modules.packages-excluder": "1.0.8",
-        "@teambit/envs.docs.env-overview-template": "0.0.2",
-        "@teambit/mdx.ui.mdx-scope-context": "1.0.0",
-        "@teambit/preview.react-preview": "1.0.23",
-        "@teambit/react.mounter": "1.0.3",
-        "@teambit/react.react-env": "1.0.34",
-        "@teambit/typescript.typescript-compiler": "2.0.15",
-        "eslint": "^7.28.0"
-      },
+      "dependencies": {},
       "peerDependencies": {}
-    },
-    "linkCoreAspects": true,
-    "rootComponents": true
+    }
   },
   "teambit.workspace/workspace-config-files": {
     "enableWorkspaceConfigWrite": true
-  },
-  "teambit.generator/generator": {
-    "envs": [
-      "my-org.my-scope/envs/my-react-env"
-    ]
   }
 }

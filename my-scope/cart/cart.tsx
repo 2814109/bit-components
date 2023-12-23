@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react';
 
-export type ApolloProviderProps = {
+export type CartProps = {
   children?: ReactNode;
 };
 
-export function ApolloProvider({ children }: ApolloProviderProps) {
+export function Cart({ children }: CartProps) {
   return (
     <div>
       {children}

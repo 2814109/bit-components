@@ -9,73 +9,17 @@
  */
 
 {
-    "buttons/button": {
-        "name": "buttons/button",
+    "cart": {
+        "name": "cart",
         "scope": "",
         "version": "",
-        "defaultScope": "my-org.design",
+        "defaultScope": "my-scope",
         "mainFile": "index.ts",
-        "rootDir": "design/buttons/button",
+        "rootDir": "my-scope/cart",
         "config": {
-            "my-org.my-scope/envs/my-react-env": {},
+            "bitdev.react/react-env@1.1.16": {},
             "teambit.envs/envs": {
-                "env": "my-org.my-scope/envs/my-react-env"
-            }
-        }
-    },
-    "context/apollo-provider": {
-        "name": "context/apollo-provider",
-        "scope": "",
-        "version": "",
-        "defaultScope": "my-org.my-scope",
-        "mainFile": "index.ts",
-        "rootDir": "my-scope/context/apollo-provider",
-        "config": {
-            "my-org.my-scope/envs/my-react-env": {},
-            "teambit.envs/envs": {
-                "env": "my-org.my-scope/envs/my-react-env"
-            }
-        }
-    },
-    "context/user-langauge": {
-        "name": "context/user-langauge",
-        "scope": "",
-        "version": "",
-        "defaultScope": "my-org.my-scope",
-        "mainFile": "index.ts",
-        "rootDir": "my-scope/context/user-langauge",
-        "config": {
-            "my-org.my-scope/envs/my-react-env": {},
-            "teambit.envs/envs": {
-                "env": "my-org.my-scope/envs/my-react-env"
-            }
-        }
-    },
-    "envs/my-react-env": {
-        "name": "envs/my-react-env",
-        "scope": "",
-        "version": "",
-        "defaultScope": "my-org.my-scope",
-        "mainFile": "index.ts",
-        "rootDir": "my-scope/envs/my-react-env",
-        "config": {
-            "teambit.envs/envs": {
-                "env": "teambit.envs/env"
-            },
-            "teambit.dependencies/dependency-resolver": {
-                "policy": {}
-            },
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.preview/preview": {},
-            "teambit.component/dev-files": {},
-            "teambit.pipelines/builder": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "teambit.react",
-                    "name": "react-env-extension",
-                    "version": "1.0.32"
-                }
+                "env": "bitdev.react/react-env"
             }
         }
     },
@@ -83,11 +27,11 @@
         "name": "pages/welcome",
         "scope": "",
         "version": "",
-        "defaultScope": "my-org.my-scope",
+        "defaultScope": "my-scope",
         "mainFile": "index.ts",
         "rootDir": "my-scope/pages/welcome",
         "config": {
-            "bitdev.react/react-env@1.1.13": {},
+            "bitdev.react/react-env@1.1.16": {},
             "teambit.envs/envs": {
                 "env": "bitdev.react/react-env"
             }
