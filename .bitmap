@@ -79,20 +79,6 @@
             }
         }
     },
-    "hooks/use-counter": {
-        "name": "hooks/use-counter",
-        "scope": "",
-        "version": "",
-        "defaultScope": "my-org.my-scope",
-        "mainFile": "index.ts",
-        "rootDir": "my-scope/hooks/use-counter",
-        "config": {
-            "bitdev.react/react-env@1.1.13": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
-            }
-        }
-    },
     "pages/welcome": {
         "name": "pages/welcome",
         "scope": "",
